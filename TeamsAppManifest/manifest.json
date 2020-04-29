@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0",
+  "id": "b5b72ea9-2964-429f-b175-9a6b52ed00a4",
+  "packageName": "com.microsoft.teams.samples",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://dev.botframework.com",
+    "privacyUrl": "https://privacy.microsoft.com",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
+  },
+  "name": {
+    "short": "Action Messaging Extension",
+    "full": "Microsoft Teams Action Based Messaging Extension"
+  },
+  "description": {
+    "short": "Sample demonstrating an Action Based Messaging Extension",
+    "full": "Sample Action Messaging Extension built with the Bot Builder SDK"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "composeExtensions": [
+    {
+      "botId": "b5b72ea9-2964-429f-b175-9a6b52ed00a4",
+      "commands": [
+        {
+          "id": "addTodo",
+          "description": "Create a To Do item",
+          "title": "Create a To Do",
+          "fetchTask": false,
+          "type": "action"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity"
+  ]
+}
